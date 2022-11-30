@@ -33,7 +33,7 @@ spec:
       - name: git-url
         value: https://github.com/psturc-org/hacbs-test-project
       - name: output-image
-        value: quay.io/psturc/test-images:jvm-test123-$(tt.params.git-revision)
+        value: quay.io/psturc/test-images@sha256:31c5608ce6522ef1fe42f3484c02b43bf57375f8809f47bdfd0ef4f1186680da-$(tt.params.git-revision)
       pipelineRef:
         bundle: quay.io/psturc/pipeline-java-builder:hack-appstudio
         name: java-builder
